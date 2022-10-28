@@ -1,0 +1,29 @@
+.cite-title {
+  color: #383838;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  margin: 120px 120px 120px 120px;
+}
+.img {
+  text-align: center;
+  margin: 0 0 45px 0;
+}
+.content {
+  color: #383838;
+  font-size: 25px;
+  text-align: center;
+  display: inline-block;
+  width: 300px;
+  height: 185px;
+  margin: 40px 0 0 0;
+}
+p {
+  margin: 0 0 0 0;
+}
+hr {
+  background-color: #f5bd41;
+  border: none;
+  width: 100px;
+  height: 4px;
+}
