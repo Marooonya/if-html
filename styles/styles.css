@@ -1,28 +1,21 @@
-.advantages-container {
-  text-align: center;
-  display: inline-block;
-  margin: 120px 120px 120px 120px;
+@import url("./fonts.css");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.title{
+.container {
+  width: 1232px;
+  margin: 0 auto;
+}
+
+.title {
   color: #383838;
   font-size: 40px;
-  margin: 0 0 20px 0;
-}
-
-.img {
   text-align: center;
-  margin: 0 0 45px 0;
-}
-
-.advantages-content-item {
-  color: #383838;
-  font-size: 25px;
-  text-align: center;
-  display: inline-block;
-  width: 300px;
-  height: 185px;
-  margin: 40px 0 0 0;
+  margin: 120px 0 20px;
 }
 
 .line {
@@ -31,4 +24,72 @@
   border: none;
   width: 100px;
   height: 4px;
+}
+
+.advantages-content {
+  display: flex;
+  gap: 16px;
+  margin: 80px 0 124px;
+}
+
+.advantages-content-item {
+  color: #383838;
+  font-size: 24px;
+  text-align: center;
+  width: 25%;
+}
+
+.img {
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: #10367c;
+  background-size: 100%;
+  color: #ffffff;
+  font-size: 20px;
+  height: 625px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1232px;
+}
+
+.col-name {
+  font-weight: bolder;
+}
+
+.footer-item {
+  margin-top: 23px;
+  font-weight: 400;
+}
+
+.about {
+  width: 193px;
+  height: 211px;
+  margin-right: 223px;
+  margin-top: 120px;
+}
+
+.property-types {
+  width: 141px;
+  height: 306px;
+  margin-right: 275px;
+  margin-top: 120px;
+}
+
+.support {
+  width: 235px;
+  height: 117px;
+  margin-top: 120px;
+}
+
+.triphouse {
+  font-size: 14px;
+  width: 253px;
+  height: 16px;
+  margin-top: 62px;
 }
