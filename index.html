@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Lesson7</title>
+    <meta name="viewport" content="width=display-width, initial-scale=1.0" />
+    <title>Lesson8</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <!--Top-section-->
     <div class="top-section">
       <div class="top-section__container">
-        <div class="top-section__container--header header">
+        <div class="top-section__container--header header col-lg-12 col-sm-6">
           <svg class="logo">
             <use href="./assets/images/triphouse.svg#logo" />
           </svg>
@@ -33,10 +34,14 @@
           </div>
         </div>
         <h1>Discover stays<br />to live, work or just relax</h1>
-        <form class="top-section__form">
+        <form class="top-section__form col-lg-12 col-sm-6">
           <div class="top-section__form--title">
-            <label for="city-search">Your destination or hotel name</label>
-            <label for="date-search">Check-in — Check-out</label>
+            <label class="col-md-3" for="city-search"
+              >Your destination or hotel name</label
+            >
+            <label class="col-md-3" for="date-search"
+              >Check-in — Check-out</label
+            >
           </div>
           <div class="top-section__form--input">
             <input
@@ -184,25 +189,25 @@
       <h2 class="content__title">What do we offer</h2>
       <div class="content__line"></div>
       <div class="content__advantages">
-        <div class="content__advantages--item">
+        <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
           <svg class="img">
             <use href="./assets/images/triphouse.svg#headset" />
           </svg>
           <p>Support 24/7</p>
         </div>
-        <div class="content__advantages--item">
+        <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
           <svg class="img" xmlns="http://www.w3.org/2000/svg">
             <use href="./assets/images/triphouse.svg#forum" />
           </svg>
           <p>Communicate directly</p>
         </div>
-        <div class="content__advantages--item">
+        <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
           <svg class="img" xmlns="http://www.w3.org/2000/svg">
             <use href="./assets/images/triphouse.svg#devices" />
           </svg>
           <p>Book online</p>
         </div>
-        <div class="content__advantages--item">
+        <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
           <svg class="img" xmlns="http://www.w3.org/2000/svg">
             <use href="./assets/images/triphouse.svg#thumb" />
           </svg>
@@ -212,17 +217,20 @@
     </div>
     <!--Footer-->
     <div class="footer">
+      <svg class="logo1 col-sm-2">
+        <use href="./assets/images/triphouse.svg#logo" />
+      </svg>
       <div class="footer__container">
         <div class="footer__container--item">
           <ul class="footer-list-heading">
-            About
+            <a href="">About</a>
             <li class="footer-list-item">How Triphouse works</li>
             <li class="footer-list-item">Careers</li>
             <li class="footer-list-item">Privacy</li>
             <li class="footer-list-item">Terms</li>
           </ul>
           <ul class="footer-list-heading">
-            Property types
+            <a href="">Property types</a>
             <li class="footer-list-item">Guest houses</li>
             <li class="footer-list-item">Hotels</li>
             <li class="footer-list-item">Apartments</li>
@@ -231,7 +239,7 @@
             <li class="footer-list-item">Hostels</li>
           </ul>
           <ul class="footer-list-heading">
-            Support
+            <a href="">Support</a>
             <li class="footer-list-item">Contact Customer Service</li>
             <li class="footer-list-item">FAQ</li>
           </ul>
