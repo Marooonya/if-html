@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Lesson6</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/lesson-6.css" />
   </head>
   <body>
     <!--Top-section-->
@@ -17,8 +17,10 @@
               <a href="">Attractions</a>
             </div>
             <div class="header-options">
-              <button class="night"></button>
-              <button class="account"></button>
+              <button><img src="assets/images/Night.png" alt="mode" /></button>
+              <button>
+                <img src="assets/images/AccountCircle.png" alt="account" />
+              </button>
             </div>
           </div>
         </div>
@@ -49,13 +51,7 @@
             <button class="search-button">Search</button>
           </div>
         </form>
-        <div class="apps">
-          <a
-            class="google-play"
-            href="https://play.google.com/store/games?hl=ru&gl=US"
-          ></a>
-          <a class="app-store" href="https://www.apple.com/ru/app-store/"></a>
-        </div>
+        <div class="apps"><img src="assets/images/Apps.png" alt="icon" /></div>
       </div>
     </div>
     <!--Content-->
@@ -83,33 +79,31 @@
     </div>
     <!--Footer-->
     <div class="footer">
-      <div class="footer-container">
-        <div class="footer-item">
-          <ul class="footer-list-heading">
-            About
-            <li class="footer-list-item">How Triphouse works</li>
-            <li class="footer-list-item">Careers</li>
-            <li class="footer-list-item">Privacy</li>
-            <li class="footer-list-item">Terms</li>
-          </ul>
-          <ul class="footer-list-heading">
-            Property types
-            <li class="footer-list-item">Guest houses</li>
-            <li class="footer-list-item">Hotels</li>
-            <li class="footer-list-item">Apartments</li>
-            <li class="footer-list-item">Villas</li>
-            <li class="footer-list-item">Holiday homes</li>
-            <li class="footer-list-item">Hostels</li>
-          </ul>
-          <ul class="footer-list-heading">
-            Support
-            <li class="footer-list-item">Contact Customer Service</li>
-            <li class="footer-list-item">FAQ</li>
-          </ul>
+      <div class="row">
+        <div class="about">
+          <div class="col-name"><p>About</p></div>
+          <div class="footer-item"><p>How Triphouse works</p></div>
+          <div class="footer-item"><p>Careers</p></div>
+          <div class="footer-item"><p>Privacy</p></div>
+          <div class="footer-item"><p>Terms</p></div>
         </div>
-        <p class="developer-info">
-          &copy2022Triphouse, Inc. All rights reserved
-        </p>
+        <div class="property-types">
+          <div class="col-name"><p>Property types</p></div>
+          <div class="footer-item"><p>Guest houses</p></div>
+          <div class="footer-item"><p>Hotels</p></div>
+          <div class="footer-item"><p>Apartments</p></div>
+          <div class="footer-item"><p>Villas</p></div>
+          <div class="footer-item"><p>Holiday homes</p></div>
+          <div class="footer-item"><p>Hostels</p></div>
+        </div>
+        <div class="support">
+          <div class="col-name"><p>Support</p></div>
+          <div class="footer-item"><p>Contact Customer Service</p></div>
+          <div class="footer-item"><p>FAQ</p></div>
+        </div>
+        <div class="triphouse">
+          <p>&copy2022Triphouse, Inc. All rights reserved</p>
+        </div>
       </div>
     </div>
   </body>
