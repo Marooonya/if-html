@@ -6,19 +6,180 @@
   margin: 0;
 }
 
-.container {
+h1 {
+  display: block;
+  color: #ffffff;
+  font-size: 50px;
+  margin-top: 200px;
+}
+
+.top-section {
+  height: 900px;
+  background-image: url(../assets/images/town.png);
+  background-size: 100%;
+  padding-top: 50px;
+}
+
+.logo {
+  width: 205px;
+  height: 40px;
+  fill: #3077c6;
+}
+
+.night {
+  width: 30px;
+  height: 30px;
+}
+
+.account {
+  width: 40px;
+  height: 40px;
+}
+
+.app1 {
+  width: 135px;
+  height: 40px;
+}
+
+.app2 {
+  width: 120px;
+  height: 40px;
+}
+
+.top-section__container {
+  width: 1232px;
+  height: 900px;
+  margin: 0 auto;
+}
+
+.top-section__container--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.header__buttons--options {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header__buttons--options a {
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  padding: 12px 0;
+  font-size: 24px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__buttons--options a:hover {
+  border-bottom: 3px solid #f5bd41;
+}
+
+.header__buttons--options button {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+.top-section__form {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-section__form--title {
+  display: flex;
+  gap: 221px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+.top-section__form--input {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
+  height: 64px;
+}
+
+.top-section__form--input input {
+  border: 3px solid transparent;
+  border-radius: 8px;
+  padding: 21px 21px;
+  font-size: 18px;
+}
+
+.top-section__form--input input:focus {
+  outline: none;
+  border: 3px solid #f5bd41;
+}
+
+.top-section__form--input input-center {
+  border: 1px solid gray;
+}
+
+.city {
+  width: 467px;
+}
+
+.date {
+  width: 260px;
+}
+
+.peoples {
+  width: 314px;
+}
+
+.top-section__form--button {
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  background-color: #3077c6;
+  width: 192px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.top-section__apps {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 120px;
+}
+
+.google-play {
+  width: 135px;
+  height: 40px;
+}
+
+.app-store {
+  width: 120px;
+  height: 40px;
+}
+
+.content {
   width: 1232px;
   margin: 0 auto;
 }
 
-.title {
+.content__title {
   color: #383838;
   font-size: 40px;
   text-align: center;
   margin: 120px 0 20px;
 }
 
-.line {
+.content__line {
   background-color: #f5bd41;
   margin: 0 auto;
   border: none;
@@ -26,13 +187,13 @@
   height: 4px;
 }
 
-.advantages-content {
+.content__advantages {
   display: flex;
   gap: 16px;
   margin: 80px 0 124px;
 }
 
-.advantages-content-item {
+.content__advantages--item {
   color: #383838;
   font-size: 24px;
   text-align: center;
@@ -41,6 +202,9 @@
 
 .img {
   margin-bottom: 40px;
+  width: 100px;
+  height: 100px;
+  fill: #3077c6;
 }
 
 .footer {
@@ -51,45 +215,31 @@
   height: 625px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.footer__container {
   margin: 0 auto;
+  padding-top: 120px;
   width: 1232px;
 }
 
-.col-name {
+.footer__container--item {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-list-heading {
+  padding-left: 0;
+  width: calc(100% / 3);
   font-weight: bolder;
 }
 
-.footer-item {
-  margin-top: 23px;
-  font-weight: 400;
+.footer-list-item {
+  list-style-type: none;
+  margin-top: 24px;
+  font-weight: normal;
 }
 
-.about {
-  width: 193px;
-  height: 211px;
-  margin-right: 223px;
-  margin-top: 120px;
-}
-
-.property-types {
-  width: 141px;
-  height: 306px;
-  margin-right: 275px;
-  margin-top: 120px;
-}
-
-.support {
-  width: 235px;
-  height: 117px;
-  margin-top: 120px;
-}
-
-.triphouse {
+.footer__developer-info {
   font-size: 14px;
-  width: 253px;
   height: 16px;
   margin-top: 62px;
 }
