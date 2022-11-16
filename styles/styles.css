@@ -51,13 +51,13 @@
   height: 625px;
 }
 
-.footer-container {
+.footer__container {
   margin: 0 auto;
   padding-top: 120px;
   width: 1232px;
 }
 
-.footer-item {
+.footer__container--item {
   display: flex;
   gap: 22px;
 }
@@ -69,13 +69,14 @@
 }
 
 .footer-list-item {
-  list-style-type: none; /* Убираем маркеры */
+  list-style-type: none;
   margin-top: 24px;
   font-weight: normal;
 }
 
-.developer-info {
+.footer__developer-info {
   font-size: 14px;
+  width: 253px;
   height: 16px;
   margin-top: 62px;
 }
