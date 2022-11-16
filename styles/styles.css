@@ -51,45 +51,31 @@
   height: 625px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.footer-container {
   margin: 0 auto;
+  padding-top: 120px;
   width: 1232px;
 }
 
-.col-name {
+.footer-item {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-list-heading {
+  padding-left: 0;
+  width: calc(100% / 3);
   font-weight: bolder;
 }
 
-.footer-item {
-  margin-top: 23px;
-  font-weight: 400;
+.footer-list-item {
+  list-style-type: none; /* Убираем маркеры */
+  margin-top: 24px;
+  font-weight: normal;
 }
 
-.about {
-  width: 193px;
-  height: 211px;
-  margin-right: 223px;
-  margin-top: 120px;
-}
-
-.property-types {
-  width: 141px;
-  height: 306px;
-  margin-right: 275px;
-  margin-top: 120px;
-}
-
-.support {
-  width: 235px;
-  height: 117px;
-  margin-top: 120px;
-}
-
-.triphouse {
+.developer-info {
   font-size: 14px;
-  width: 253px;
   height: 16px;
   margin-top: 62px;
 }
