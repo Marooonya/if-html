@@ -254,7 +254,7 @@ input:focus {
 }
 
 .top-section__form--button {
-  color: var(--general-white);
+  color: #ffffff;
   border-radius: 8px;
   background-color: var(--accent-blue);
   font-size: 24px;
