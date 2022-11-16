@@ -2,10 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Lesson5</title>
+    <title>Lesson6</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <!--Top-section-->
+    <div class="site-wrapper">
+      <div class="top-section-container">
+        <div class="header">
+          <div><img src="assets/images/logo_vector.png" alt="logo" /></div>
+          <div class="header-buttons">
+            <div class="header-options">
+              <a href="">Stays</a>
+              <a href="">Attractions</a>
+            </div>
+            <div class="header-options">
+              <button class="night"></button>
+              <button class="account"></button>
+            </div>
+          </div>
+        </div>
+        <h1>Discover stays<br />to live, work or just relax</h1>
+        <form class="search">
+          <div class="form-title">
+            <label for="city-search">Your destination or hotel name</label>
+            <label for="date-search">Check-in — Check-out</label>
+          </div>
+          <div class="form-input">
+            <input
+              class="city"
+              id="city-search"
+              type="text"
+              placeholder="Choose location"
+            />
+            <input
+              class="date"
+              id="date-search"
+              type="text"
+              placeholder="Choose date"
+            />
+            <input
+              class="peoples"
+              type="text"
+              placeholder="Specify parameters"
+            />
+            <button class="search-button">Search</button>
+          </div>
+        </form>
+        <div class="apps">
+          <a
+            class="google-play"
+            href="https://play.google.com/store/games?hl=ru&gl=US"
+          ></a>
+          <a class="app-store" href="https://www.apple.com/ru/app-store/"></a>
+        </div>
+      </div>
+    </div>
+    <!--Content-->
     <div class="container">
       <h2 class="title">What do we offer</h2>
       <div class="line"></div>
@@ -28,32 +81,35 @@
         </div>
       </div>
     </div>
+    <!--Footer-->
     <div class="footer">
-      <div class="row">
-        <div class="about">
-          <div class="col-name"><p>About</p></div>
-          <div class="footer-item"><p>How Triphouse works</p></div>
-          <div class="footer-item"><p>Careers</p></div>
-          <div class="footer-item"><p>Privacy</p></div>
-          <div class="footer-item"><p>Terms</p></div>
+      <div class="footer-container">
+        <div class="footer-item">
+          <ul class="footer-list-heading">
+            About
+            <li class="footer-list-item">How Triphouse works</li>
+            <li class="footer-list-item">Careers</li>
+            <li class="footer-list-item">Privacy</li>
+            <li class="footer-list-item">Terms</li>
+          </ul>
+          <ul class="footer-list-heading">
+            Property types
+            <li class="footer-list-item">Guest houses</li>
+            <li class="footer-list-item">Hotels</li>
+            <li class="footer-list-item">Apartments</li>
+            <li class="footer-list-item">Villas</li>
+            <li class="footer-list-item">Holiday homes</li>
+            <li class="footer-list-item">Hostels</li>
+          </ul>
+          <ul class="footer-list-heading">
+            Support
+            <li class="footer-list-item">Contact Customer Service</li>
+            <li class="footer-list-item">FAQ</li>
+          </ul>
         </div>
-        <div class="property-types">
-          <div class="col-name"><p>Property types</p></div>
-          <div class="footer-item"><p>Guest houses</p></div>
-          <div class="footer-item"><p>Hotels</p></div>
-          <div class="footer-item"><p>Apartments</p></div>
-          <div class="footer-item"><p>Villas</p></div>
-          <div class="footer-item"><p>Holiday homes</p></div>
-          <div class="footer-item"><p>Hostels</p></div>
-        </div>
-        <div class="support">
-          <div class="col-name"><p>Support</p></div>
-          <div class="footer-item"><p>Contact Customer Service</p></div>
-          <div class="footer-item"><p>FAQ</p></div>
-        </div>
-        <div class="triphouse">
-          <p>&copy2022Triphouse, Inc. All rights reserved</p>
-        </div>
+        <p class="developer-info">
+          &copy2022Triphouse, Inc. All rights reserved
+        </p>
       </div>
     </div>
   </body>
