@@ -1,28 +1,21 @@
-.advantages-container {
-  text-align: center;
-  display: inline-block;
-  margin: 120px 120px 120px 120px;
+@import url("./fonts.css");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.title{
+.container {
+  width: 1232px;
+  margin: 0 auto;
+}
+
+.title {
   color: #383838;
   font-size: 40px;
-  margin: 0 0 20px 0;
-}
-
-.img {
   text-align: center;
-  margin: 0 0 45px 0;
-}
-
-.advantages-content-item {
-  color: #383838;
-  font-size: 25px;
-  text-align: center;
-  display: inline-block;
-  width: 300px;
-  height: 185px;
-  margin: 40px 0 0 0;
+  margin: 120px 0 20px;
 }
 
 .line {
@@ -31,4 +24,58 @@
   border: none;
   width: 100px;
   height: 4px;
+}
+
+.advantages-content {
+  display: flex;
+  gap: 16px;
+  margin: 80px 0 124px;
+}
+
+.advantages-content-item {
+  color: #383838;
+  font-size: 24px;
+  text-align: center;
+  width: 25%;
+}
+
+.img {
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: #10367c;
+  background-size: 100%;
+  color: #ffffff;
+  font-size: 20px;
+  height: 625px;
+}
+
+.footer-container {
+  margin: 0 auto;
+  padding-top: 120px;
+  width: 1232px;
+}
+
+.footer-item {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-list-heading {
+  padding-left: 0;
+  width: calc(100% / 3);
+  font-weight: bolder;
+}
+
+.footer-list-item {
+  list-style-type: none; /* Убираем маркеры */
+  margin-top: 24px;
+  font-weight: normal;
+}
+
+.developer-info {
+  font-size: 14px;
+  height: 16px;
+  margin-top: 62px;
 }
