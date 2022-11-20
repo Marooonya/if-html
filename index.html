@@ -11,7 +11,7 @@
     <div class="top-section">
       <div class="top-section__container">
         <div class="top-section__container--header header col-lg-12 col-sm-6">
-          <svg class="logo">
+          <svg class="site-logo">
             <use href="./assets/images/triphouse.svg#logo" />
           </svg>
           <div class="header__buttons">
@@ -21,12 +21,12 @@
             </div>
             <div class="header__buttons--options">
               <button>
-                <svg class="night">
+                <svg class="day-night-button">
                   <use href="./assets/images/triphouse.svg#night" />
                 </svg>
               </button>
               <button>
-                <svg class="account">
+                <svg class="site-authorization">
                   <use href="./assets/images/triphouse.svg#account" />
                 </svg>
               </button>
@@ -36,28 +36,28 @@
         <h1>Discover stays<br />to live, work or just relax</h1>
         <form class="top-section__form col-lg-12 col-sm-6">
           <div class="top-section__form--title">
-            <label class="col-md-3" for="city-search"
-              >Your destination or hotel name</label
-            >
-            <label class="col-md-3" for="date-search"
-              >Check-in — Check-out</label
-            >
+            <label class="col-md-3" for="city-search">
+              Your destination or hotel name
+            </label>
+            <label class="col-md-3" for="date-search">
+              Check-in — Check-out
+            </label>
           </div>
           <div class="top-section__form--input">
             <input
-              class="city"
+              class="input-city"
               id="city-search"
               type="text"
               placeholder="Choose location"
             />
             <input
-              class="date"
+              class="input-date"
               id="date-search"
               type="text"
               placeholder="Choose date"
             />
             <input
-              class="peoples"
+              class="input-option"
               type="text"
               placeholder="Specify parameters"
             />
@@ -65,11 +65,8 @@
           </div>
         </form>
         <div class="top-section__apps">
-          <a
-            class="google-play"
-            href="https://play.google.com/store/games?hl=ru&gl=US"
-          >
-            <svg>
+          <a href="https://play.google.com/store/games?hl=ru&gl=US">
+            <svg class="app-for-android" viewBox="0 0 135 40">
               <path
                 d="M130 40H5c-2.75 0-5-2.25-5-5V5c0-2.75 2.25-5 5-5h125c2.75 0 5 2.25 5 5v30c0 2.75-2.25 5-5 5Z"
                 fill="#000"
@@ -177,8 +174,8 @@
               </defs>
             </svg>
           </a>
-          <a class="app-store" href="https://www.apple.com/ru/app-store/"
-            ><svg class="app2">
+          <a href="https://www.apple.com/ru/app-store/"
+            ><svg class="app-for-ios">
               <use href="./assets/images/triphouse.svg#app-store" /></svg
           ></a>
         </div>
@@ -190,25 +187,25 @@
       <div class="content__line"></div>
       <div class="content__advantages">
         <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
-          <svg class="img">
+          <svg class="offer-img">
             <use href="./assets/images/triphouse.svg#headset" />
           </svg>
           <p>Support 24/7</p>
         </div>
         <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
-          <svg class="img" xmlns="http://www.w3.org/2000/svg">
+          <svg class="offer-img" xmlns="http://www.w3.org/2000/svg">
             <use href="./assets/images/triphouse.svg#forum" />
           </svg>
           <p>Communicate directly</p>
         </div>
         <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
-          <svg class="img" xmlns="http://www.w3.org/2000/svg">
+          <svg class="offer-img" xmlns="http://www.w3.org/2000/svg">
             <use href="./assets/images/triphouse.svg#devices" />
           </svg>
           <p>Book online</p>
         </div>
         <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
-          <svg class="img" xmlns="http://www.w3.org/2000/svg">
+          <svg class="offer-img" xmlns="http://www.w3.org/2000/svg">
             <use href="./assets/images/triphouse.svg#thumb" />
           </svg>
           <p>Real guest reviews</p>
@@ -217,20 +214,20 @@
     </div>
     <!--Footer-->
     <div class="footer">
-      <svg class="logo1 col-sm-2">
+      <svg class="site-logo-footer col-sm-2">
         <use href="./assets/images/triphouse.svg#logo" />
       </svg>
       <div class="footer__container">
         <div class="footer__container--item">
-          <ul class="footer-list-heading">
-            <a href="">About</a>
+          <ul class="footer-list">
+            <li class="footer-list-heading"><a href="">About</a></li>
             <li class="footer-list-item">How Triphouse works</li>
             <li class="footer-list-item">Careers</li>
             <li class="footer-list-item">Privacy</li>
             <li class="footer-list-item">Terms</li>
           </ul>
-          <ul class="footer-list-heading">
-            <a href="">Property types</a>
+          <ul class="footer-list">
+            <li class="footer-list-heading"><a href="">Property types</a></li>
             <li class="footer-list-item">Guest houses</li>
             <li class="footer-list-item">Hotels</li>
             <li class="footer-list-item">Apartments</li>
@@ -238,8 +235,8 @@
             <li class="footer-list-item">Holiday homes</li>
             <li class="footer-list-item">Hostels</li>
           </ul>
-          <ul class="footer-list-heading">
-            <a href="">Support</a>
+          <ul class="footer-list">
+            <li class="footer-list-heading"><a href="">Support</a></li>
             <li class="footer-list-item">Contact Customer Service</li>
             <li class="footer-list-item">FAQ</li>
           </ul>

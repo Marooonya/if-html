@@ -15,6 +15,13 @@
   margin: 0;
 }
 
+h1 {
+  color: var(--general-white);
+  font-size: 50px;
+  margin-top: 196px;
+  letter-spacing: 1px;
+}
+
 .col-lg-1 {
   width: calc(var(--colum-width) / 12);
 }
@@ -63,56 +70,46 @@
   width: 100%;
 }
 
-h1 {
-  display: block;
-  color: var(--general-white);
-  font-size: 50px;
-  margin-top: 192px;
-}
-
 .top-section {
-  height: 900px;
   background-image: url(../assets/images/town.png);
-  background-size: 100%;
-  padding-top: 58px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
-.logo {
+.site-logo {
   width: 205px;
   height: 40px;
   fill: var(--accent-blue);
 }
 
-.logo1 {
+.site-logo-footer {
   display: none;
 }
 
-.night {
+.day-night-button {
   width: 30px;
   height: 30px;
 }
 
-.account {
+.site-authorization {
   width: 40px;
   height: 40px;
 }
 
-.app1 {
+.app-for-android {
   width: 135px;
   height: 40px;
 }
 
-.app2 {
+.app-for-ios {
   width: 120px;
   height: 40px;
 }
 
 .top-section__container {
-  width: 1232px;
-  height: 900px;
+  width: 100%;
+  max-width: 1232px;
+  height: 100vh;
   margin: 0 auto;
+  padding:0 16px;
 }
 
 .top-section__container--header {
@@ -139,7 +136,6 @@ h1 {
   padding: 12px 0;
   font-size: 24px;
   color: var(--general-white);
-  font-family: "Roboto", sans-serif;
 }
 
 .header__buttons--options a:hover {
@@ -150,6 +146,7 @@ h1 {
   background-color: unset;
   border: unset;
   cursor: pointer;
+  padding: 0;
 }
 
 .top-section__form {
@@ -160,9 +157,10 @@ h1 {
 
 .top-section__form--title {
   display: flex;
-  gap: 221px;
+  gap: 180px;
   color: var(--general-white);
   font-size: 18px;
+  letter-spacing: 1px;
   margin-bottom: 24px;
   margin-left: 24px;
 }
@@ -180,7 +178,7 @@ h1 {
   border: 3px solid transparent;
   border-radius: 8px;
   padding: 21px 21px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .top-section__form--input input:focus {
@@ -192,15 +190,15 @@ h1 {
   border: 1px solid gray;
 }
 
-.city {
+.input-city {
   width: 38%;
 }
 
-.date {
+.input-date {
   width: 21%;
 }
 
-.peoples {
+.input-option {
   width: 25%;
 }
 
@@ -210,7 +208,7 @@ h1 {
   border: none;
   background-color: var(--accent-blue);
   width: 16%;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -218,24 +216,25 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 120px;
+  margin-top: 9.7%;
 }
 
-.google-play {
+.app-for-android {
   width: 135px;
   height: 40px;
 }
 
-.app-store {
+.app-for-ios {
   width: 120px;
   height: 40px;
 }
 
 .content {
-  width: 1232px;
+  width: 100%;
+  max-width: 1232px;
+  height: 100vh;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding:90px 16px 0;
 }
 
 .content__title {
@@ -266,7 +265,7 @@ h1 {
   width: 25%;
 }
 
-.img {
+.offer-img {
   margin-bottom: 40px;
   width: 100px;
   height: 100px;
@@ -278,15 +277,14 @@ h1 {
   background-size: cover;
   color: var(--general-white);
   font-size: 20px;
-  height: 625px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .footer__container {
+  width: 100%;
+  max-width: 1232px;
+  height: 100vh;
   margin: 0 auto;
-  padding-top: 120px;
-  width: 1232px;
+  padding: 120px 16px 0;
 }
 
 .footer__container--item {
@@ -294,13 +292,15 @@ h1 {
   gap: 22px;
 }
 
-.footer-list-heading {
+.footer-list {
   padding-left: 0;
   width: calc(100% / 3);
   font-weight: bolder;
 }
 
-.footer-list-heading a {
+.footer-list-heading a{
+  pointer-events: none;
+  cursor: default;
   font-weight: bolder;
   text-decoration: none;
   border-bottom: 3px solid transparent;
@@ -311,8 +311,13 @@ h1 {
 
 .footer-list-item {
   list-style-type: none;
-  margin-top: 24px;
+  margin-bottom: 24px;
   font-weight: normal;
+}
+
+.footer-list-heading {
+  list-style-type: none;
+  margin-bottom: 24px;
 }
 
 .footer__developer-info {
@@ -325,6 +330,11 @@ h1 {
   /* For table: */
   [class*="col-"] {
     width: 100%;
+  }
+
+  h1 {
+    margin-top: 80px;
+    font-size: 40px;
   }
 
   .col-md-1 {
@@ -375,25 +385,16 @@ h1 {
     width: 100%;
   }
 
-  h1 {
-    margin-top: 80px;
-    font-size: 40px;
-  }
-
-  .top-section {
-    height: 620px;
-  }
-
   .top-section__container {
     width: 100%;
   }
 
-  .logo {
+  .site-logo {
     width: 140px;
     height: 30px;
   }
 
-  .logo1 {
+  .site-logo-footer {
     display: none;
   }
 
@@ -409,12 +410,12 @@ h1 {
     font-size: 14px;
   }
 
-  .night {
+  .day-night-button {
     width: 15px;
     height: 15px;
   }
 
-  .account {
+  .site-authorization {
     width: 20px;
     height: 20px;
   }
@@ -466,7 +467,7 @@ h1 {
     width: 260px;
   }
 
-  .img {
+  .offer-img {
     width: 80px;
     height: 80px;
     margin-right: 20px;
@@ -474,7 +475,6 @@ h1 {
   }
 
   .footer {
-    height: 200px;
     padding-top: 50px;
   }
 
@@ -494,13 +494,13 @@ h1 {
     display: none;
   }
 
-  .footer__developer-info {
-    margin-top: 40px;
+  .footer-list-heading a {
+    pointer-events: auto;
+    border-bottom: 2px solid var(--general-white);
   }
 
-  .end {
-    width: 100%;
-    font-size: 10px;
+  .footer__developer-info {
+    margin-top: 40px;
   }
 }
 
@@ -508,6 +508,15 @@ h1 {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
+  }
+
+  h1 {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+
+  p {
+    width: 195px;
   }
 
   .col-sm-1 {
@@ -534,10 +543,6 @@ h1 {
     width: 100%;
   }
 
-  h1 {
-    margin-top: 40px;
-    font-size: 30px;
-  }
 
   .top-section {
     height: 542px;
@@ -547,14 +552,13 @@ h1 {
 
   .top-section__container {
     width: 100%;
-    height: 535px;
   }
 
   .top-section__container--header {
     height: 48px;
   }
 
-  .logo {
+  .site-logo {
     width: 122px;
     height: 24px;
   }
@@ -571,12 +575,12 @@ h1 {
     display: none;
   }
 
-  .night {
+  .day-night-button {
     width: 16px;
     height: 16px;
   }
 
-  .account {
+  .site-authorization {
     width: 24px;
     height: 24px;
   }
@@ -607,15 +611,15 @@ h1 {
     margin-right: 8px;
   }
 
-  .city {
+  .input-city {
     width: 100%;
   }
 
-  .date {
+  .input-date {
     width: 100%;
   }
 
-  .peoples {
+  .input-option {
     width: 100%;
   }
 
@@ -658,22 +662,15 @@ h1 {
     font-size: 15px;
   }
 
-  .img {
+  .offer-img {
     margin-right: 0;
     width: 100%;
     height: 70px;
     margin-bottom: 16px;
   }
 
-  p {
-    width: 195px;
-  }
-
   .footer {
-    height: 205px;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding: 40px 40px 0;
   }
 
   .footer__container {
@@ -686,7 +683,7 @@ h1 {
     gap: 16px;
   }
 
-  .logo1 {
+  .site-logo-footer {
     display: flex;
     margin: 0 auto;
     width: 98px;
