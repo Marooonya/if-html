@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=display-width, initial-scale=1.0" />
-    <title>Lesson8</title>
+    <title>Lesson9</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -30,18 +30,27 @@
                   <use href="./assets/images/triphouse.svg#account" />
                 </svg>
               </button>
+              <button>
+                <svg class="menu-button">
+                  <use href="./assets/images/triphouse.svg#menu" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
         <h1>Discover stays<br />to live, work or just relax</h1>
         <form class="top-section__form col-lg-12 col-sm-6">
           <div class="top-section__form--title">
-            <label class="col-md-3" for="city-search">
-              Your destination or hotel name
-            </label>
-            <label class="col-md-3" for="date-search">
-              Check-in — Check-out
-            </label>
+            <div class="city">
+              <label class="col-md-3" for="city-search">
+                Your destination or hotel name
+              </label>
+            </div>
+            <div class="date">
+              <label class="col-md-3" for="date-search">
+                Check-in — Check-out
+              </label>
+            </div>
           </div>
           <div class="top-section__form--input">
             <input
@@ -57,11 +66,50 @@
               placeholder="Choose date"
             />
             <input
-              class="input-option"
+              class="input-date other-date"
+              id="other-date-search"
               type="text"
-              placeholder="Specify parameters"
+              placeholder="Choose date"
             />
-            <button class="top-section__form--button">Search</button>
+            <div class="date-in-out">
+              <label class="col-md-3" for="date-search"> Check-in </label>
+            </div>
+            <div class="date-in-out">
+              <label class="col-md-3" for="other-date-search">
+                Check-out
+              </label>
+            </div>
+            <div class="options-background"></div>
+            <input
+              class="input-option input-adults"
+              id="adults"
+              type="text"
+              placeholder="Select"
+            />
+            <input
+              class="input-children"
+              id="children"
+              type="text"
+              placeholder="Select"
+            />
+            <input
+              class="input-rooms"
+              id="rooms"
+              type="text"
+              placeholder="Select"
+            />
+            <div class="options option-adults">
+              <label class="col-md-3" for="adults"> Adults </label>
+            </div>
+            <div class="options">
+              <label class="col-md-3" for="children"> Children </label>
+            </div>
+            <div class="options">
+              <label class="col-md-3" for="rooms"> Rooms </label>
+            </div>
+            <svg class="search">
+              <use href="./assets/images/triphouse.svg#search" /></svg
+            ><button class="top-section__form--button">Search</button>
           </div>
         </form>
         <div class="top-section__apps">
