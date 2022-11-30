@@ -58,6 +58,22 @@ h1 {
   display: none;
 }
 
+.circle-for-tablet {
+  display: none;
+}
+
+.arrow-for-tablet {
+  display: none;
+}
+
+.circle-for-mobile {
+  display: none;
+}
+
+.arrow-for-mobile {
+  display: none;
+}
+
 .col-lg-1 {
   width: calc(var(--colum-width) / 12);
 }
@@ -108,6 +124,7 @@ h1 {
 
 .top-section {
   background-image: url(../assets/images/town.png);
+  background-size: cover;
 }
 
 .site-logo {
@@ -271,7 +288,7 @@ h1 {
   flex-wrap: wrap;
   width: 100%;
   max-width: 1232px;
-  height: 100vh;
+  height: 571px;
   margin: 0 auto;
 }
 
@@ -279,29 +296,30 @@ h1 {
   color: #383838;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 120px;
+  margin-bottom: 25px;
+  margin-left: 100px;
   width: 100%;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: end;
 }
 
-.line {
-  width: 100%;
-}
-
-.content__line {
+.content__title:after {
+  content: '';
+  display: inline-block;
   background-color: var(--accent-yellow);
-  margin: 0 auto;
-  border: none;
-  max-width: 100%;
   width: 100px;
   height: 4px;
+  position: relative;
+  top: 24px;
+  left: -202px;
 }
 
 .content__advantages {
   display: flex;
-  margin-top: -141px;
+  margin-top: -125px;
   width: 100%;
 }
 
@@ -319,6 +337,110 @@ h1 {
   fill: var(--accent-blue);
 }
 
+.home {
+  width: 100%;
+  background-color: #eaf0f9;
+}
+
+.home__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1232px;
+  height: 828px;
+  margin: 0 auto;
+}
+
+.home__title {
+  color: #383838;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 104px;
+  width: 100%;
+  height: 40px;
+}
+
+.home__advantages {
+  display: flex;
+  margin-top: -140px;
+  width: 100%;
+  gap: 16px;
+}
+
+.home__advantages--item {
+  text-align: left;
+  width: 25%;
+  font-size: 24px;
+}
+
+.home__advantages--item a {
+  text-decoration: none;
+  color: var(--accent-blue);
+}
+
+.home__advantages--item p {
+  color: #a2a2a2;
+  margin-top: 24px;
+}
+
+.home-type {
+  background-repeat: no-repeat;
+  width: 296px;
+  height: 296px;
+  margin-bottom: 24px;
+}
+
+.hotels {
+  background-image: url("../assets/images/Hotels.png");
+  position: absolute;
+}
+
+.home-type__info {
+  margin-top: 320px;
+  position: relative;
+}
+
+.apartments-sun {
+   background-image: url("../assets/images/Apartment-Sunshine.png");
+ }
+
+.home-type__mobile-info {
+  position: relative;
+  top: 320px;
+}
+
+.villas {
+  background-image: url("../assets/images/Villas.png");
+}
+
+.hostels {
+  background-image: url("../assets/images/Hostels.png");
+  position: absolute;
+}
+
+.circle-for-desktop {
+  background-color: #f3f3f4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: calc(50% - 40px / 2);
+  left: 276px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.arrow-for-desktop {
+  width: 40px;
+  height: 28px;
+  margin-top: 10px;
+}
+
+.home-type__desktop-info {
+  position: relative;
+  top: 320px;
+}
+
 .footer {
   background-color: var(--general-blue);
   background-size: cover;
@@ -329,7 +451,7 @@ h1 {
 .footer__container {
   width: 100%;
   max-width: 1232px;
-  height: 100vh;
+  height: 625px;
   margin: 0 auto;
   padding: 120px 16px 0;
 }
@@ -434,6 +556,7 @@ h1 {
 
   .top-section__container {
     width: 100%;
+    height: 600px;
   }
 
   .site-logo {
@@ -497,7 +620,15 @@ h1 {
 
   .content__title {
     font-size: 35px;
-    margin-top: -50px;
+    margin-top: 140px;
+  }
+
+  .content__title:after {
+    left: -180px;
+  }
+
+  .line {
+    margin-bottom: 20px;
   }
 
   .content__advantages {
@@ -519,6 +650,62 @@ h1 {
     height: 80px;
     margin-right: 20px;
     margin-bottom: 0;
+  }
+
+  .home__container {
+    height: 700px;
+  }
+
+  .home__title {
+    font-size: 35px;
+    margin-top: 120px;
+    margin-bottom: 104px;
+    height: 35px;
+  }
+
+  .home__advantages {
+    margin-top: -245px;
+  }
+
+  .home__advantages--item {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .delete {
+    display: none;
+  }
+
+  .home-type__info {
+    margin-top: 320px;
+  }
+
+  .apartments-sun {
+    position: absolute;
+  }
+
+  .circle-for-tablet {
+    display: block;
+    background-color: #f3f3f4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: calc(50% - 40px / 2);
+    left: 276px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .home-type__mobile-info {
+    margin-top: -40px;
+  }
+
+  .arrow-for-tablet {
+    display: unset;
+    width: 40px;
+    height: 28px;
+    margin-top: 10px;
   }
 
   .footer {
@@ -568,6 +755,14 @@ h1 {
     width: 195px;
   }
 
+  .circle-for-tablet {
+    display: none;
+  }
+
+  .arrow-for-tablet {
+    display: none;
+  }
+
   .col-sm-1 {
     width: calc(var(--colum-width) / 6);
   }
@@ -598,6 +793,7 @@ h1 {
 
   .top-section__container {
     width: 100%;
+    height: 535px;
   }
 
   .top-section__container--header {
@@ -780,12 +976,20 @@ h1 {
 
   .content {
     width: 100%;
+    height: 640px;
     margin: 0 auto;
   }
 
   .content__title {
-    margin-top: 0;
+    margin-top: 24px;
+    margin-left: 0;
+    height: 33px;
+    margin-bottom: 35px;
     font-size: 28px;
+  }
+
+  .content__title:after {
+    display: none;
   }
 
   .content__line {
@@ -794,14 +998,15 @@ h1 {
 
   .content__advantages {
     width: 100%;
-    gap: 32px;
-    margin-top: 32px;
-    margin-bottom: 0;
+    gap: 30px;
+    margin-top: -30px;
+    margin-bottom: 40px;
   }
 
   .content__advantages--item {
     flex-wrap: wrap;
     width: 100%;
+    height: 105px;
   }
 
   .content__advantages--item p {
@@ -815,15 +1020,111 @@ h1 {
     margin-bottom: 16px;
   }
 
+  .home__container {
+    width: 100%;
+    height: 355px;
+  }
+
+  .home__title {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 33px;
+  }
+
+  .villas {
+    display: none;
+  }
+
+  .hostels {
+    display: none;
+  }
+
+  .delete {
+    display: none;
+  }
+
+  .home-type {
+    margin-right: 0;
+    margin-bottom: 8px;
+    width: 156px;
+    background-size: cover;
+  }
+
+  .home-type__mobile-info {
+    position: relative;
+    top: 175px;
+  }
+  .home-type__info {
+    margin-top: 163px;
+  }
+
+  .home__advantages {
+    margin-top: -51px;
+    justify-content: center;
+  }
+
+  .hotels {
+    width: 156px;
+    height: 156px;
+    margin-right: 0;
+  }
+
+  .circle-for-mobile {
+    background-color: #f3f3f4;
+    width: 28px;
+    display: block;
+    height: 28px;
+    border-radius: 50%;
+    position: relative;
+    top: calc(50% - 40px / 2);
+    left: 140px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .arrow-for-mobile {
+    width: 13px;
+    display: unset;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 8px;
+  }
+
+  .apartments-sun {
+    position: absolute;
+    width: 156px;
+    height: 156px;
+  }
+
+  .home__advantages--item {
+    font-size: 12px;
+    width: 44%;
+  }
+
+  .home__advantages {
+    margin-top: -125px;
+  }
+
+  .home__advantages--item p {
+    margin-top: 4px;
+    width: auto;
+  }
+
   .footer {
     padding: 40px 40px 0;
+    height: 200px;
+  }
+
+  .footer__container {
+    height: auto;
   }
 
   .footer__container--item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 40px;
-    gap: unset;
+    gap: 16px;
+    height: 16px;
   }
 
   .site-logo-footer {
@@ -837,6 +1138,10 @@ h1 {
   .footer-list-heading a {
     font-size: 15px;
     border-bottom: 1px solid var(--general-white);
+  }
+
+  .footer-list-heading {
+    font-size: 15px;
   }
 
   .footer-list {
