@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=display-width, initial-scale=1.0" />
-    <title>Lesson9</title>
+    <title>Lesson10</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -16,8 +16,8 @@
           </svg>
           <div class="header__buttons">
             <div class="header__buttons--options">
-              <a href="">Stays</a>
-              <a href="">Attractions</a>
+              <a class="top-section__first-link" href="">Stays</a>
+              <a class="top-section__second-link" href="">Attractions</a>
             </div>
             <div class="header__buttons--options">
               <button>
@@ -222,17 +222,17 @@
               </defs>
             </svg>
           </a>
-          <a href="https://www.apple.com/ru/app-store/"
-            ><svg class="app-for-ios">
-              <use href="./assets/images/triphouse.svg#app-store" /></svg
-          ></a>
+          <a href="https://www.apple.com/ru/app-store/">
+            <svg class="app-for-ios">
+              <use href="./assets/images/triphouse.svg#app-store" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
     <!--Content-->
     <div class="content">
       <h2 class="content__title">What do we offer</h2>
-      <div class="line"><div class="content__line"></div></div>
       <div class="content__advantages">
         <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
           <svg class="offer-img">
@@ -241,19 +241,19 @@
           <p>Support 24/7</p>
         </div>
         <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
-          <svg class="offer-img" xmlns="http://www.w3.org/2000/svg">
+          <svg class="offer-img">
             <use href="./assets/images/triphouse.svg#forum" />
           </svg>
           <p>Communicate directly</p>
         </div>
         <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
-          <svg class="offer-img" xmlns="http://www.w3.org/2000/svg">
+          <svg class="offer-img">
             <use href="./assets/images/triphouse.svg#devices" />
           </svg>
           <p>Book online</p>
         </div>
         <div class="content__advantages--item col-lg-3 col-md-6 col-sm-4">
-          <svg class="offer-img" xmlns="http://www.w3.org/2000/svg">
+          <svg class="offer-img">
             <use href="./assets/images/triphouse.svg#thumb" />
           </svg>
           <p>Real guest reviews</p>
@@ -265,59 +265,63 @@
       <div class="home__container">
         <h2 class="home__title">Homes guests loves</h2>
         <div class="home__advantages">
-          <div class="home__advantages--item col-lg-3 col-md-6 col-sm-4">
-            <div class="home-type hotels">
-              <div class="home-type__info">
-                <a href="">Support 24/7</a>
-                <p>Saint Petersburg, Russia</p>
-              </div>
+          <div class="home__advantages--item">
+            <div class="home__advantages--img-wrapper">
+              <img src="./assets/images/Hotels.png" alt="Hotel img" />
             </div>
+            <p class="apartments">Hotel Leopold</p>
+            <p class="apartments-location">Saint Petersburg, Russia</p>
           </div>
-          <div class="home__advantages--item col-lg-3 col-md-6 col-sm-4">
-            <div class="home-type apartments-sun">
+          <div class="home__advantages--item">
+            <div
+              class="home__advantages--img-wrapper tablet-arrow mobile-arrow"
+            >
+              <img
+                src="./assets/images/Apartment-Sunshine.png"
+                alt="Hotel img"
+              />
               <div class="circle-for-tablet">
-                <svg class="arrow-for-tablet" xmlns="http://www.w3.org/2000/svg">
+                <svg class="arrow-for-tablet">
                   <use href="./assets/images/triphouse.svg#arrow" />
                 </svg>
               </div>
               <div class="circle-for-mobile">
-              <svg class="arrow-for-mobile" xmlns="http://www.w3.org/2000/svg">
-                <use href="./assets/images/triphouse.svg#arrow" />
-              </svg>
-            </div>
-              <div class="home-type__mobile-info">
-                <a href="">Communicate directly</a>
-                <p>Santa Cruz de Tenerife, Spain</p>
-              </div>
-            </div>
-          </div>
-          <div class="home__advantages--item delete col-lg-3 col-md-6 col-sm-4">
-            <div class="home-type villas"></div>
-            <a class="delete" href="">Book online</a>
-            <p class="delete">Vysokie Tatry, Slowakia</p>
-          </div>
-          <div class="home__advantages--item delete col-lg-3 col-md-6 col-sm-4">
-            <div class="home-type hostels">
-              <div class="circle-for-desktop">
-                <svg class="arrow-for-desktop" xmlns="http://www.w3.org/2000/svg">
+                <svg class="arrow-for-mobile">
                   <use href="./assets/images/triphouse.svg#arrow" />
                 </svg>
               </div>
             </div>
-            <div class="home-type__desktop-info">
-              <a href="" class="delete">Real guest reviews</a>
-              <p class="delete">Berlin, Germany</p>
+            <p class="apartments">Apartment Sunshine</p>
+            <p class="apartments-location">Santa Cruz de Tenerife, Spain</p>
+          </div>
+          <div class="home__advantages--item delete">
+            <div class="home__advantages--img-wrapper">
+              <img src="./assets/images/Villas.png" alt="Hotel img" />
             </div>
+            <p class="apartments">Villa Kunerad</p>
+            <p class="apartments-location">Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="home__advantages--item delete">
+            <div class="home__advantages--img-wrapper desktop-arrow">
+              <img src="./assets/images/Hostels.png" alt="Hotel img" />
+              <div class="circle-for-desktop">
+                <svg class="arrow-for-desktop">
+                  <use href="./assets/images/triphouse.svg#arrow" />
+                </svg>
+              </div>
+            </div>
+            <p class="apartments">Hostel Friendship</p>
+            <p class="apartments-location">Berlin, Germany</p>
           </div>
         </div>
       </div>
     </div>
     <!--Footer-->
     <div class="footer">
-      <svg class="site-logo-footer col-sm-2">
-        <use href="./assets/images/triphouse.svg#logo" />
-      </svg>
       <div class="footer__container">
+        <svg class="site-logo-footer col-sm-2">
+          <use href="./assets/images/triphouse.svg#logo" />
+        </svg>
         <div class="footer__container--item">
           <ul class="footer-list">
             <li class="footer-list-heading"><a href="">About</a></li>
