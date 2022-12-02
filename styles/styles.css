@@ -18,7 +18,7 @@
 h1 {
   color: var(--general-white);
   font-size: 50px;
-  margin-top: 196px;
+  margin-top: 170px;
   letter-spacing: 1px;
 }
 
@@ -154,6 +154,8 @@ h1 {
 }
 
 .top-section__container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1232px;
   height: 100vh;
@@ -165,6 +167,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .header__buttons {
@@ -182,13 +185,20 @@ h1 {
 .header__buttons--options a {
   text-decoration: none;
   border-bottom: 3px solid transparent;
-  padding: 12px 0;
   font-size: 24px;
   color: var(--general-white);
 }
 
-.header__buttons--options a:hover {
-  border-bottom: 3px solid var(--accent-yellow);
+.header__buttons--options a:hover:after {
+  content: "";
+  display: flex;
+  background-color: var(--accent-yellow);
+  width: 100%;
+  max-width: 50px;
+  height: 3px;
+  top: 12px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .header__buttons--options button {
@@ -240,8 +250,9 @@ h1 {
   border: 3px solid var(--accent-yellow);
 }
 
-.top-section__form--input input-center {
+.top-section__form--input .input-date {
   border: 1px solid gray;
+  padding: 22px 22px;
 }
 
 .input-city {
@@ -285,11 +296,11 @@ h1 {
 
 .content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   max-width: 1232px;
-  height: 571px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .content__title {
@@ -297,17 +308,12 @@ h1 {
   font-size: 40px;
   text-align: center;
   margin-top: 120px;
-  margin-bottom: 25px;
+  margin-bottom: 105px;
   margin-left: 100px;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
 }
 
 .content__title:after {
-  content: '';
+  content: "";
   display: inline-block;
   background-color: var(--accent-yellow);
   width: 100px;
@@ -319,15 +325,13 @@ h1 {
 
 .content__advantages {
   display: flex;
-  margin-top: -125px;
-  width: 100%;
+  margin-bottom: 120px;
 }
 
 .content__advantages--item {
   color: var(--text-color);
   font-size: 24px;
   text-align: center;
-  width: 25%;
 }
 
 .offer-img {
@@ -338,17 +342,16 @@ h1 {
 }
 
 .home {
-  width: 100%;
   background-color: #eaf0f9;
 }
 
 .home__container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   max-width: 1232px;
-  height: 828px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .home__title {
@@ -363,60 +366,34 @@ h1 {
 
 .home__advantages {
   display: flex;
-  margin-top: -140px;
+  margin-bottom: 120px;
   width: 100%;
   gap: 16px;
-}
-
-.home__advantages--item {
-  text-align: left;
-  width: 25%;
   font-size: 24px;
 }
 
-.home__advantages--item a {
-  text-decoration: none;
-  color: var(--accent-blue);
+.home__advantages--item {
+  width: 25%;
 }
 
-.home__advantages--item p {
-  color: #a2a2a2;
-  margin-top: 24px;
-}
-
-.home-type {
-  background-repeat: no-repeat;
-  width: 296px;
-  height: 296px;
+.home__advantages--img-wrapper img {
+  width: 100%;
   margin-bottom: 24px;
 }
 
-.hotels {
-  background-image: url("../assets/images/Hotels.png");
-  position: absolute;
+.apartments {
+  color: var(--accent-blue);
+  margin-bottom: 24px;
+  width: 100%;
 }
 
-.home-type__info {
-  margin-top: 320px;
+.apartments-location {
+  color: #a2a2a2;
+  width: 100%;
+}
+
+.desktop-arrow {
   position: relative;
-}
-
-.apartments-sun {
-   background-image: url("../assets/images/Apartment-Sunshine.png");
- }
-
-.home-type__mobile-info {
-  position: relative;
-  top: 320px;
-}
-
-.villas {
-  background-image: url("../assets/images/Villas.png");
-}
-
-.hostels {
-  background-image: url("../assets/images/Hostels.png");
-  position: absolute;
 }
 
 .circle-for-desktop {
@@ -424,9 +401,9 @@ h1 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  position: relative;
-  top: calc(50% - 40px / 2);
-  left: 276px;
+  position: absolute;
+  top: 40%;
+  left: 93%;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -436,35 +413,30 @@ h1 {
   margin-top: 10px;
 }
 
-.home-type__desktop-info {
-  position: relative;
-  top: 320px;
-}
-
 .footer {
   background-color: var(--general-blue);
-  background-size: cover;
-  color: var(--general-white);
-  font-size: 20px;
 }
 
 .footer__container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1232px;
-  height: 625px;
   margin: 0 auto;
-  padding: 120px 16px 0;
+  padding: 0 16px;
 }
 
 .footer__container--item {
   display: flex;
+  margin-top: 120px;
+  color: var(--general-white);
+  font-size: 20px;
   gap: 22px;
 }
 
 .footer-list {
   padding-left: 0;
   width: calc(100% / 3);
-  font-weight: bolder;
 }
 
 .footer-list-heading a {
@@ -481,7 +453,6 @@ h1 {
 .footer-list-item {
   list-style-type: none;
   margin-bottom: 24px;
-  font-weight: normal;
 }
 
 .footer-list-heading {
@@ -491,8 +462,9 @@ h1 {
 
 .footer__developer-info {
   font-size: 14px;
-  height: 16px;
+  color: var(--general-white);
   margin-top: 62px;
+  margin-bottom: 120px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -502,8 +474,8 @@ h1 {
   }
 
   h1 {
-    margin-top: 80px;
-    font-size: 40px;
+    margin-top: 100px;
+    font-size: 35px;
   }
 
   .col-md-1 {
@@ -591,18 +563,18 @@ h1 {
   }
 
   .top-section__form--title {
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 10px;
   }
 
   .top-section__form--input input {
-    height: 32px;
+    height: 50px;
     padding: 10px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .top-section__form--input {
-    height: 32px;
+    height: 50px;
   }
 
   .top-section__form--button {
@@ -613,36 +585,25 @@ h1 {
     margin-top: 80px;
   }
 
-  .content {
-    width: 100%;
-    margin: 0 auto;
-  }
-
   .content__title {
     font-size: 35px;
-    margin-top: 140px;
   }
 
   .content__title:after {
     left: -180px;
   }
 
-  .line {
-    margin-bottom: 20px;
-  }
-
   .content__advantages {
     flex-wrap: wrap;
-    align-items: start;
-    width: 95%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
   }
 
   .content__advantages--item {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 45%;
+    text-align: left;
   }
 
   .offer-img {
@@ -652,10 +613,6 @@ h1 {
     margin-bottom: 0;
   }
 
-  .home__container {
-    height: 700px;
-  }
-
   .home__title {
     font-size: 35px;
     margin-top: 120px;
@@ -663,26 +620,12 @@ h1 {
     height: 35px;
   }
 
-  .home__advantages {
-    margin-top: -245px;
-  }
-
   .home__advantages--item {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    width: 50%;
   }
 
   .delete {
     display: none;
-  }
-
-  .home-type__info {
-    margin-top: 320px;
-  }
-
-  .apartments-sun {
-    position: absolute;
   }
 
   .circle-for-tablet {
@@ -691,14 +634,14 @@ h1 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    position: relative;
-    top: calc(50% - 40px / 2);
-    left: 276px;
+    position: absolute;
+    top: 40%;
+    left: 94%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .home-type__mobile-info {
-    margin-top: -40px;
+  .tablet-arrow {
+    position: relative;
   }
 
   .arrow-for-tablet {
@@ -708,21 +651,9 @@ h1 {
     margin-top: 10px;
   }
 
-  .footer {
-    padding-top: 50px;
-  }
-
-  .footer__container {
-    padding-top: 0;
-    width: 700px;
-    height: 200px;
-  }
-
   .footer__container {
     gap: 0;
     text-align: center;
-    justify-content: space-around;
-    width: 100%;
   }
 
   .footer-list-item {
@@ -746,7 +677,7 @@ h1 {
   }
 
   h1 {
-    margin-top: 40px;
+    margin-top: 49px;
     font-size: 30px;
     letter-spacing: 0.3px;
   }
@@ -797,7 +728,7 @@ h1 {
   }
 
   .top-section__container--header {
-    height: 48px;
+    margin-top: 12px;
   }
 
   .site-logo {
@@ -877,6 +808,7 @@ h1 {
     margin-top: 5px;
     padding: 18px 4px 0;
     font-size: 16px;
+    border: none;
   }
 
   .top-section__form--input .input-adults {
@@ -974,16 +906,9 @@ h1 {
     margin-top: 32px;
   }
 
-  .content {
-    width: 100%;
-    height: 640px;
-    margin: 0 auto;
-  }
-
   .content__title {
     margin-top: 24px;
     margin-left: 0;
-    height: 33px;
     margin-bottom: 35px;
     font-size: 28px;
   }
@@ -992,21 +917,16 @@ h1 {
     display: none;
   }
 
-  .content__line {
-    display: none;
-  }
-
   .content__advantages {
-    width: 100%;
     gap: 30px;
-    margin-top: -30px;
     margin-bottom: 40px;
   }
 
   .content__advantages--item {
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
     height: 105px;
+    text-align: center;
   }
 
   .content__advantages--item p {
@@ -1022,7 +942,6 @@ h1 {
 
   .home__container {
     width: 100%;
-    height: 355px;
   }
 
   .home__title {
@@ -1032,42 +951,8 @@ h1 {
     height: 33px;
   }
 
-  .villas {
-    display: none;
-  }
-
-  .hostels {
-    display: none;
-  }
-
   .delete {
     display: none;
-  }
-
-  .home-type {
-    margin-right: 0;
-    margin-bottom: 8px;
-    width: 156px;
-    background-size: cover;
-  }
-
-  .home-type__mobile-info {
-    position: relative;
-    top: 175px;
-  }
-  .home-type__info {
-    margin-top: 163px;
-  }
-
-  .home__advantages {
-    margin-top: -51px;
-    justify-content: center;
-  }
-
-  .hotels {
-    width: 156px;
-    height: 156px;
-    margin-right: 0;
   }
 
   .circle-for-mobile {
@@ -1076,9 +961,9 @@ h1 {
     display: block;
     height: 28px;
     border-radius: 50%;
-    position: relative;
-    top: calc(50% - 40px / 2);
-    left: 140px;
+    position: absolute;
+    top: 40%;
+    left: 93%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -1090,38 +975,27 @@ h1 {
     margin-left: 8px;
   }
 
-  .apartments-sun {
-    position: absolute;
-    width: 156px;
-    height: 156px;
-  }
-
   .home__advantages--item {
     font-size: 12px;
-    width: 44%;
+    width: 48%;
   }
 
   .home__advantages {
-    margin-top: -125px;
+    justify-content: center;
+    margin-bottom: 40px;
   }
-
-  .home__advantages--item p {
-    margin-top: 4px;
-    width: auto;
+  .home__advantages--img-wrapper img {
+    margin-bottom: 8px;
   }
-
-  .footer {
-    padding: 40px 40px 0;
-    height: 200px;
+  .apartments {
+    margin-bottom: 4px;
   }
 
   .footer__container {
-    height: auto;
+    align-items: center;
   }
 
   .footer__container--item {
-    display: flex;
-    justify-content: center;
     margin-top: 40px;
     gap: 16px;
     height: 16px;
@@ -1129,7 +1003,7 @@ h1 {
 
   .site-logo-footer {
     display: flex;
-    margin: 0 auto;
+    margin-top: 40px;
     width: 98px;
     height: 19px;
     fill: var(--general-white);
@@ -1155,7 +1029,7 @@ h1 {
   .footer__developer-info {
     width: 100%;
     margin-top: 32px;
+    margin-bottom: 40px;
     font-size: 12px;
-    text-align: center;
   }
 }
