@@ -8,9 +8,9 @@
   </head>
   <body>
     <!--Top-section-->
-    <header class="top-section">
+    <div class="top-section">
       <div class="top-section__container">
-        <div class="top-section__container--header header col-lg-12 col-sm-6">
+        <header class="top-section__container--header header col-lg-12 col-sm-6">
           <svg class="site-logo">
             <use href="./assets/images/triphouse.svg#logo" />
           </svg>
@@ -19,8 +19,7 @@
               <a class="top-section__first-link" href="">Stays</a>
               <a class="top-section__second-link" href="">Attractions</a>
             </nav>
-            <div class="header__buttons&#45;&#45;options">
-              <!-- нужен ли <nav></nav> для кнопок?-->
+            <div class="header__buttons--options">
               <button>
                 <svg class="day-night-button">
                   <use href="./assets/images/triphouse.svg#night" />
@@ -31,87 +30,64 @@
                   <use href="./assets/images/triphouse.svg#account" />
                 </svg>
               </button>
-              <button>
+              <button class="delete-desktop">
                 <svg class="menu-button">
                   <use href="./assets/images/triphouse.svg#menu" />
                 </svg>
               </button>
             </div>
           </div>
-        </div>
+        </header>
         <h1>Discover stays<br />to live, work or just relax</h1>
         <form class="top-section__form col-lg-12 col-sm-6">
-          <div class="top-section__form--title">
-            <div class="city">
-              <label class="col-md-3" for="city-search">
-                Your destination or hotel name
-              </label>
-            </div>
-            <div class="date">
-              <label class="col-md-3" for="date-search">
-                Check-in — Check-out
-              </label>
-            </div>
-          </div>
-          <div class="top-section__form--input">
+          <div class="choose-location">
             <input
-              class="input-city"
+              class="special-input"
               id="city-search"
               type="text"
-              placeholder="Choose location"
+              placeholder="Choose"
             />
-            <input
-              class="input-date"
-              id="date-search"
-              type="text"
-              placeholder="Choose date"
-            />
-            <input
-              class="input-date other-date"
-              id="other-date-search"
-              type="text"
-              placeholder="Choose date"
-            />
-            <div class="date-in-out">
-              <label class="col-md-3" for="date-search"> Check-in </label>
-            </div>
-            <div class="date-in-out">
-              <label class="col-md-3" for="other-date-search">
-                Check-out
+            <svg class="search delete-desktop">
+              <use href="./assets/images/triphouse.svg#search" />
+            </svg>
+            <label class="label special-label" for="city-search">
+              Your destination or hotel name
+            </label>
+          </div>
+          <div class="choose-date">
+            <div class="check-in-out-date">
+              <input id="check-in-search" type="text" placeholder="Choose" />
+              <label class="label delete-mobile" for="check-in-search">
+                Check-in — Check-out
+              </label>
+              <label class="label delete-desktop" for="check-in-search">
+                Check-in
               </label>
             </div>
-            <div class="options-background"></div>
-            <input
-              class="input-option input-adults"
-              id="adults"
-              type="text"
-              placeholder="Select"
-            />
-            <input
-              class="input-children"
-              id="children"
-              type="text"
-              placeholder="Select"
-            />
-            <input
-              class="input-rooms"
-              id="rooms"
-              type="text"
-              placeholder="Select"
-            />
-            <div class="options option-adults">
-              <label class="col-md-3" for="adults"> Adults </label>
+            <div class="check-in-out-date delete-desktop">
+              <input id="check-out-search" type="text" placeholder="Choose" />
+              <label class="label" for="check-out-search">Check-out</label>
             </div>
-            <div class="options">
-              <label class="col-md-3" for="children"> Children </label>
-            </div>
-            <div class="options">
-              <label class="col-md-3" for="rooms"> Rooms </label>
-            </div>
-            <svg class="search">
-              <use href="./assets/images/triphouse.svg#search" /></svg
-            ><button class="top-section__form--button">Search</button>
           </div>
+          <div class="choose-options">
+            <div class="option">
+              <input id="adults-search" type="text" placeholder="Choose" />
+              <label class="label delete-desktop" for="adults-search">
+                Adults
+              </label>
+            </div>
+            <div class="option second-option delete-desktop">
+              <input id="children-search" type="text" placeholder="Choose" />
+              <label class="label second-label" for="children-search">
+                Children
+              </label>
+            </div>
+            <div class="option delete-desktop">
+              <input id="room-search" type="text" placeholder="Choose" />
+              <label class="label" for="room-search">Rooms</label>
+            </div>
+          </div>
+          <button class="top-section__form--button">Search</button>
         </form>
         <nav class="top-section__apps">
           <a href="https://play.google.com/store/games?hl=ru&gl=US">
@@ -230,7 +206,7 @@
           </a>
         </nav>
       </div>
-    </header>
+    </div>
     <!--Content-->
     <section class="content">
       <h2 class="content__title">What do we offer</h2>
@@ -274,20 +250,18 @@
             <p class="apartments-location">Saint Petersburg, Russia</p>
           </div>
           <div class="home__advantages--item">
-            <figure
-              class="home__advantages--img-wrapper tablet-arrow mobile-arrow"
-            >
+            <figure class="home__advantages--img-wrapper tablet-arrow mobile-arrow">
               <img
                 src="./assets/images/Apartment-Sunshine.png"
                 alt="Hotel img"
               />
-              <figure class="circle-for-tablet">
-                <svg class="arrow-for-tablet">
+              <figure class="circle-for-tablet delete-desktop">
+                <svg class="arrow-for-tablet delete-desktop">
                   <use href="./assets/images/triphouse.svg#arrow" />
                 </svg>
               </figure>
-              <figure class="circle-for-mobile">
-                <svg class="arrow-for-mobile">
+              <figure class="circle-for-mobile delete-desktop">
+                <svg class="arrow-for-mobile delete-desktop">
                   <use href="./assets/images/triphouse.svg#arrow" />
                 </svg>
               </figure>
@@ -295,14 +269,14 @@
             <p class="apartments">Apartment Sunshine</p>
             <p class="apartments-location">Santa Cruz de Tenerife, Spain</p>
           </div>
-          <div class="home__advantages--item delete">
+          <div class="home__advantages--item delete-tablet">
             <figure class="home__advantages--img-wrapper">
               <img src="./assets/images/Villas.png" alt="Hotel img" />
             </figure>
             <p class="apartments">Villa Kunerad</p>
             <p class="apartments-location">Vysokie Tatry, Slowakia</p>
           </div>
-          <div class="home__advantages--item delete">
+          <div class="home__advantages--item delete-tablet">
             <figure class="home__advantages--img-wrapper desktop-arrow">
               <img src="./assets/images/Hostels.png" alt="Hotel img" />
               <figure class="circle-for-desktop">
@@ -333,36 +307,34 @@
           <p class="location">Maldives</p>
         </div>
         <div class="destinations__advantages--item">
-          <figure
-            class="destinations__advantages--img-wrapper tablet-arrow mobile-arrow"
-          >
+          <figure class="destinations__advantages--img-wrapper tablet-arrow mobile-arrow">
             <img src="./assets/images/Spain.png" alt="Hotel img" />
-            <figure class="circle-for-tablet">
-              <svg class="arrow-for-tablet">
+            <figure class="circle-for-tablet delete-desktop">
+              <svg class="arrow-for-tablet delete-desktop">
                 <use href="./assets/images/triphouse.svg#arrow" />
               </svg>
             </figure>
-            <figure class="circle-for-mobile">
-              <svg class="arrow-for-mobile">
+            <figure class="circle-for-mobile delete-desktop">
+              <svg class="arrow-for-mobile delete-desktop">
                 <use href="./assets/images/triphouse.svg#arrow" />
               </svg>
             </figure>
           </figure>
           <p class="location">Spain</p>
         </div>
-        <div class="destinations__advantages--item delete">
+        <div class="destinations__advantages--item delete-tablet">
           <figure class="destinations__advantages--img-wrapper">
             <img src="./assets/images/Norvay.png" alt="Hotel img" />
           </figure>
-          <p class="location">Norvay</p>
+          <p class="location">Norway</p>
         </div>
-        <div class="destinations__advantages--item delete">
+        <div class="destinations__advantages--item delete-tablet">
           <figure class="destinations__advantages--img-wrapper">
             <img src="./assets/images/Island.png" alt="Hotel img" />
           </figure>
           <p class="location">Island</p>
         </div>
-        <figure class="circle-for-desktop second-desktop-circle delete">
+        <figure class="circle-for-desktop second-desktop-circle delete-tablet">
           <svg class="arrow-for-desktop second-desktop-arrow">
             <use href="./assets/images/triphouse.svg#arrow" />
           </svg>
@@ -373,12 +345,12 @@
     <div class="sing-up__container">
       <div class="sing-up__container--content">
         <div class="sing-up__content">
-          <button class="close-button mobile-version">
+          <button class="close-button delete-desktop">
             <svg class="close">
               <use href="./assets/images/triphouse.svg#cross" />
             </svg>
           </button>
-          <svg class="content__img mobile-version">
+          <svg class="content__img delete-desktop">
             <use href="./assets/images/triphouse.svg#sing-up-logo" />
           </svg>
           <svg class="content__img desktop-tablet-version">
@@ -391,19 +363,17 @@
             <button class="sing-up__button">Sing up</button>
           </div>
         </div>
-        <div>
-          <button class="close-button">
-            <svg class="close">
-              <use href="./assets/images/triphouse.svg#cross" />
-            </svg>
-          </button>
-        </div>
+        <button class="close-button">
+          <svg class="close">
+            <use href="./assets/images/triphouse.svg#cross" />
+          </svg>
+        </button>
       </div>
     </div>
     <!--Footer-->
     <footer class="footer">
       <div class="footer__container">
-        <svg class="site-logo-footer col-sm-2">
+        <svg class="site-logo-footer delete-desktop col-sm-2">
           <use href="./assets/images/triphouse.svg#logo" />
         </svg>
         <nav class="footer__container--item">
@@ -430,7 +400,7 @@
           </ul>
         </nav>
         <p class="footer__developer-info">
-          &copy2022Triphouse, Inc. All rights reserved
+          &copy 2022Triphouse, Inc. All rights reserved
         </p>
       </div>
     </footer>
