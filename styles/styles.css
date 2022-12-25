@@ -529,7 +529,6 @@ input:focus {
 }
 
 .footer {
-  margin-top: 120px;
   background-color: var(--general-blue);
 }
 
@@ -993,6 +992,7 @@ input:focus {
   .choose-options {
     display: flex;
     align-items: center;
+    width: 100%;
     background-color: var(--general-white);
     border-radius: 4px;
   }
@@ -1179,6 +1179,7 @@ input:focus {
 
   .sing-up__container {
     padding: 0;
+    background-color: var(--general-white);
   }
 
   .sing-up__container--content {
